@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 
-import 'hero.dart';
+import '../model/hero.dart';
 
 @Component(
   selector: 'my-hero',
