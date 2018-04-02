@@ -1,5 +1,8 @@
 <h1>{{title}}</h1>
 <nav>
+    <a [routerLink]="routes.dashboard.toUrl()" routerLinkActive="active">
+        Панель управления
+    </a>
     <a [routerLink]="routes.heroes.toUrl()" routerLinkActive="active">
         Список героев
     </a>
