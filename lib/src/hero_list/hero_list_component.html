@@ -1,5 +1,10 @@
-<my-hero [hero]="selectedHero"></my-hero>
 <p>Список героев:</p>
+<div *ngIf="selectedHero != null">
+  <h2>
+    Избранный герой: {{ selectedHero.name | uppercase }}
+  </h2>
+  <button (click)="gotoDetail()">Подробнее...</button>
+</div>
 <div *ngIf="heroes != null">
   <ul class="heroes">
     <li *ngFor="let hero of heroes" 
