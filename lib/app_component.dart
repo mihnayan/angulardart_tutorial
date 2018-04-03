@@ -7,6 +7,7 @@ import 'src/routes.dart';
 @Component(
   selector: 'my-app',
   templateUrl: 'app_component.html',
+  styleUrls: ['app_component.css'],
   directives: [
     routerDirectives],
   providers: [

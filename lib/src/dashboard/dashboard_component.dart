@@ -10,6 +10,7 @@ import '../router_paths.dart' as paths;
 @Component(
   selector: 'hero-dashboard',
   templateUrl: 'dashboard_component.html',
+  styleUrls: ['dashboard_component.css'],
   directives: [coreDirectives, routerDirectives]
 )
 class DashboardComponent implements OnInit {
