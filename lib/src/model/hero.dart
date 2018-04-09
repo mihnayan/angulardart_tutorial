@@ -7,6 +7,8 @@ class Hero {
   factory Hero.fromJson(Map<String, dynamic> hero) =>
       new Hero(_toInt(hero['id']), hero['name']);
 
+  Map toJson() => {'id': id, 'name': name};
+
   @override
   String toString() => '$id: $name';
 }

@@ -2,11 +2,13 @@ import 'dart:async';
 import 'dart:math';
 import 'dart:convert';
 
+import 'package:angular/angular.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 
 import '../model/hero.dart';
 
+@Injectable()
 class InMemoryDataService extends MockClient {
   static final _initialHeroes = [
     { 'id': 10, 'name': 'Илья Муромец' },
@@ -71,7 +73,7 @@ class InMemoryDataService extends MockClient {
     }
 
     return new Response(json.encode({'data': data}), 200, headers: {
-      'content-type': 'application/json'
+      'content-type': 'application/json; charset=utf-8'
     });
   }
 
